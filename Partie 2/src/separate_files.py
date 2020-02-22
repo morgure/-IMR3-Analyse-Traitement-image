@@ -37,7 +37,6 @@ for root, _, files in os.walk(DB_src, topdown=True):
     imgName = name.split('.')[-2]
     if i % 2 == 0:
       imgDst = os.path.join(DB_train, cls, name)
-      print(cls)
     elif i % 3 == 0:
       imgDst = os.path.join(DB_validation, cls, name)
     else:
